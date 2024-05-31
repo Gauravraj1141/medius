@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 20px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Dear Hr,</p>
+        
+        <p>I hope this email finds you well.</p>
+        
+        <p>I am writing to share a summary report of our customer data, focusing on the distribution of customers across different states and their Days Past Due status. Below, you will find a table summarizing the counts of customers grouped by their state and DPD:</p>
+        
+        <div class="table-container">
+           {{data.summary_data|safe}}
+        </div>
+        
+        <p>This data has been extracted and processed from our recent dataset, providing insights into the geographical distribution of customers and their payment statuses.</p>
+        
+        <p>If you have any questions or require further details, please feel free to reach out. I am happy to provide additional information or clarify any points as needed.</p>
+        
+        <p>Thank you for your attention to this matter.</p>
+        
+        <p>Best regards,</p>
+        <p>[Gaurav Rajput]<br>
+            [6395463912]<br>
+       
+    </div>
+</body>
+</html>
